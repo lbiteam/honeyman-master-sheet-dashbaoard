@@ -274,12 +274,12 @@ header {
   font-size:11px; font-weight:600;
   display:flex; align-items:center; justify-content:center;
 }
-.store-owner { font-weight:600; color:var(--brown-800); }
-.store-address { color:var(--brown-700); font-size:12px; line-height:1.4; }
+.store-owner { font-weight:600; color:#fff; }
+.store-address { color:#fff; font-size:12px; line-height:1.4; }
 .store-city-tag {
   padding:3px 10px; border-radius:8px; font-size:11px; font-weight:500;
-  background:var(--honey-50); color:var(--honey-700);
-  border:1px solid var(--honey-200); white-space:nowrap;
+  background:rgba(255,255,255,.16); color:#fff;
+  border:1px solid rgba(255,255,255,.45); white-space:nowrap;
 }
 .btn-map {
   padding:6px 12px; border-radius:8px; border:1px solid var(--honey-300);
@@ -717,7 +717,7 @@ function renderModelDetail(type, model) {
         <div class="store-num">${i+1}</div>
         <div>
           <div class="store-owner">${escHtml(s.owner||'—')}</div>
-          <div style="font-size:11px;color:var(--brown-200);margin-top:2px">${escHtml(s.ownerNumber||'')}</div>
+          <div style="font-size:11px;color:#fff;margin-top:2px">${escHtml(s.ownerNumber||'')}</div>
         </div>
         <div class="store-address">${escHtml(s.address||'No address')}</div>
         <div class="store-city-tag">${escHtml(s.city)}, ${escHtml(s.state)}</div>
